@@ -1,0 +1,81 @@
+header[role="banner"] {
+	width: @pageWidth;
+	margin: 0;
+}
+.container {
+	width: @contentWidth;
+	margin: 0 auto;
+}
+.inner .logo {
+	display: block;
+	float: left;
+	margin: 7px 0 25px;
+	*margin-bottom: 8px;
+	img {
+		display: block;
+	}
+	h3 {
+		font-size: 18px;
+		font-weight: normal;
+		letter-spacing: 0.8px;
+		color: #545454;
+		margin: -39px 0 0 65px;
+	}
+}
+.navBar {
+	float: left;
+	margin: 18px 0 0 75px;
+	ul {
+		.ul();
+	}
+	li {
+		float: left;
+		font-size: 13px;
+		.border-radius(3px);
+		margin-right: 1px;
+		&:hover {
+			background-color: #00c2f3;
+			a {
+				color: #ffffff;
+			}
+		}
+		a {
+			display: block;
+			color: #545454;
+			padding: 6px 15px;
+		}
+		&.current {
+			background-color: #00c2f3;
+			a {
+				color: #ffffff;	
+			}
+		}
+	}
+}
+.navBar .has-sub-navBar a {
+	background: url("../imgs/arrowup.png") no-repeat;
+	background-position: 89% center;
+	padding-right: 32px;
+	padding-left: 12px;
+	&:hover {
+		background: url("../imgs/arrowdown.png") no-repeat;
+		background-position: 89% center;
+		padding-right: 32px;
+		padding-left: 12px;
+	}
+}
+.sign-up {
+	float: right;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 7px 13px;
+	background-color: #cc4533;
+	.border-radius(3px);
+	margin-top: 16px;
+	&:hover {
+		.box-shadow(0 0 0 3px #e0e0e0);
+	}
+	&:active {
+		margin-top: 17px;
+	}
+}

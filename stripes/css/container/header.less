@@ -1,0 +1,64 @@
+.header {
+	width: 100%;
+	margin: 0;
+	font-family: "BreeSerif Regular", Arial, sans-serif;
+	background-color: rgb(255,255,255);
+	filter:alpha(opacity=70);
+	background-color: rgba(255,255,255,0.7);
+}
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+.header-inner {
+	padding: 20px 10px;
+	h2 {
+		float: left;
+		margin: 0;
+		padding: 0;
+		font-size: 26px;
+		span {
+			color: #53a665;
+		}
+	}
+}
+.navBar {
+	float: right;
+	margin: 5px 0 0;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		position: relative;
+		float: left;
+		font-size: 15px;
+		font-weight: bold;
+		padding: 0 14px 0 7px;
+		background: url("../imgs/slash.png") no-repeat; 
+		background-position: 100% 50%;
+		&:last-child {
+			padding-right: 0;
+			background: none;
+		}
+		a {
+			text-decoration: none;
+			color: #333333;
+		}
+	}
+	li:hover a,
+	.is-active a {
+		color: #53a665;	
+	}
+	.is-active:before {
+		content: "";
+		display: block;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-top: 5px solid #53a665;
+		position: absolute;
+		left: 50%;
+		margin-left: -11px;
+		top: 20px;
+	}
+}

@@ -1,0 +1,122 @@
+.container {
+	width: 500px;
+	height: 400px;
+	padding: 50px 0 0 200px;
+	margin: 200px auto;
+}
+
+.borderBox {
+	width: 238px;
+	height: 22px;
+	border: 1px solid #c0c3d2;
+	border-top: 1px solid #a8acbc;
+	border-radius: 20px;
+	box-shadow: 0 1px #e6e7ec inset;
+}
+.inputBox {
+	width: 194px;
+	height: 19px;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 0px;
+	border: none;
+	margin-left: 10px;
+	font-family: "Georgia",Arial,sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #c5c7d2;
+}
+.searchBox {
+	width: 32px;
+	height: 21px;
+	float: right;
+	margin-top: 1px;
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0 20px 20px 0;
+	background-color: #eff0f5; 
+	background-image: url("../imgs/search.png");
+}
+
+.dataList {
+	display: inline-block;
+	width: 238px;
+	margin: 0;
+	margin-top: 9px;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid #c0c3d2;
+	border-radius: 4px;
+	box-shadow: 0 2px #d3d5de;
+	background-color: #f0f1f5;
+	position: relative; 
+}
+.dataList li {
+	font-family: "HelveticaNeue",Arial,sans-serif;
+	font-size: 12px;
+	color: #808394;
+	padding: 9px 0 8px 12px;
+	border-bottom: 1px solid white;
+	background-image: -webkit-linear-gradient(bottom,#f0f1f5,#ffffff);
+	background-image: -moz-linear-gradient(bottom,#f0f1f5,#ffffff);
+}
+.dataList li:first-child {
+	border-radius: 4px 4px 0 0;
+}
+.dataList li:last-child {
+	padding-bottom: 10px;
+	border-bottom: none;
+	border-radius: 0 0 4px 4px;
+}
+.dataList li span {
+	display: block;
+	font-family: "Georgia",Arial,sans-serif;
+	font-style: italic;
+	color: #9396a3;
+	margin-top: 1px;
+}
+
+.dataList li:hover {
+	position: relative;
+	background-image: -webkit-linear-gradient(bottom,#338cdf,#59aaf4);
+	background-image: -moz-linear-gradient(bottom,#338cdf,#59aaf4);
+	border: 1px solid #1f6db6;
+	margin: -1px -1px 0px -1px;
+	box-shadow: 0 1px #b2b2b2,0 2px #c5c5c5,0 3px #ececec,0 1px #7bbbf7 inset;
+	color: white;
+}
+.dataList li:last-child:hover {
+	margin-bottom: -1px;
+}
+.dataList li:active {
+	background-image: -webkit-linear-gradient(bottom,#59aaf4,#338cdf);
+	background-image: -moz-linear-gradient(bottom,#59aaf4,#338cdf);
+}
+.dataList li:hover span {
+	color: #f5f8fc;
+}
+.dataList li a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	float: right;
+	margin: -25px 18px 0 0;
+	background-image: url("../imgs/arrow.png");
+	border-radius: 50px; 
+}
+.dataList li:hover a {
+	background-image: url("../imgs/bluearrow.png"); 
+}
+.dataList li a:hover {
+	background-color: white;
+}
+.dataList li a:active {
+	background-color: #338cdf;
+}
+
+.dataList:before {
+	content: url("../imgs/triangle.png");
+	position: absolute;
+	left: 119px;
+	top: -16px;
+}

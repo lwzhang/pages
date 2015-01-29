@@ -1,0 +1,53 @@
+@media only screen and (max-width: 720px) {
+	.container {
+		width: 90%;
+		text-align: center;
+	}
+	.header-inner h2,
+	.navBar,
+	.footer-inner .share {
+		float: none;
+	}
+	.navBar,
+	.footer-inner .share {
+		display: inline-block;
+	}
+	.content-inner {
+		padding: 40px 0 0;
+		article {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 44px;
+		}
+	}
+	.footer-inner p {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.navBar {
+		display: block;
+		li {
+			float: none;
+			border-bottom: 3px solid #333333;
+			padding: 5px 0;
+			background-image: none;
+		}
+		.is-active {
+			border-color: #53a665; 
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.header-inner {
+		text-align: left;
+	}
+	.content-inner article h3 {
+		margin-bottom: 20px;
+	}
+}

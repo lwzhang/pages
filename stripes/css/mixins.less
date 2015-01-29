@@ -1,0 +1,42 @@
+// ===========================================
+// float
+// ===========================================
+.clearfix {
+	*zoom: 1;
+	&:after {
+		content: "\200B";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+}
+
+// ===========================================
+// IE7 fix
+// ===========================================
+.ie7-inline-block() {
+  *display: inline; 
+  *zoom: 1;
+}
+
+// ===========================================
+// css3
+// ===========================================
+
+// box-shadow 
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+        -ms-box-shadow: @shadow;
+         -o-box-shadow: @shadow;
+            box-shadow: @shadow;
+}
+
+// rotate
+.transform(@rotate) {
+	-webkit-transform: rotate(@rotate);
+	   -moz-transform: rotate(@rotate);
+	    -ms-transform: rotate(@rotate);
+	     -o-transform: rotate(@rotate);
+			transform: rotate(@rotate);
+}

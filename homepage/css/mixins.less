@@ -1,0 +1,81 @@
+// -------------------------------------------
+// reset
+// -------------------------------------------
+.reset() {
+	margin: 0;
+	padding: 0;
+}
+
+// -------------------------------------------
+// Utility 
+// -------------------------------------------
+.ul() {
+	.reset();
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+// -------------------------------------------
+// float
+// -------------------------------------------
+.clearfix {
+	*zoom: 1;
+	&:after {
+		content: ".";
+		display: block;
+		clear: both;
+		height: 0;
+		overflow: hidden;
+	}
+}
+
+// -------------------------------------------
+// IE7 fix
+// -------------------------------------------
+.ie7-inline-block() {
+  *display: inline; 
+  *zoom: 1;
+}
+
+// -------------------------------------------
+// css3
+// -------------------------------------------
+
+// box-shadow 
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+        -ms-border-radius: @radius;
+         -o-border-radius: @radius;
+        	border-radius: @radius;
+}
+
+// box-shadow 
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow;
+       -moz-box-shadow: @shadow;
+        -ms-box-shadow: @shadow;
+         -o-box-shadow: @shadow;
+            box-shadow: @shadow;
+}
+
+// background-size
+.background-size(@size) {
+-webkit-background-size: @size;
+   -moz-background-size: @size;
+    -ms-background-size: @size;
+     -o-background-size: @size;
+        background-size: @size;
+}
+
+//box-sizing
+.box-sizing(@boxmodel) {
+	-webkit-box-sizing: @boxmodel;
+	   -moz-box-sizing: @boxmodel;
+	    -ms-box-sizing: @boxmodel;
+	     -o-box-sizing: @boxmodel;
+        	box-sizing: @boxmodel;
+}
