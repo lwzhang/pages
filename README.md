@@ -8,4 +8,4 @@ https://lwzhang.github.io/practice/search/search.html
 
 https://lwzhang.github.io/practice/stripes/stripes.html
 
-https://lwzhang.github.io/practice/timezone/timezone.html
+https://lwzhang.github.io/practice/timezone/test.html
