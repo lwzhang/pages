@@ -1,0 +1,16 @@
+.main-nav-bar {
+    /*float: right;*/
+    margin-top: 18px;
+}
+
+.header .inner {
+    position: relative;
+}
+.user-info {
+    position: absolute;
+    right: 0;
+    top: -6px;
+    color: #ffffff;
+    font-size: 14px;
+    /*float: right;*/
+}

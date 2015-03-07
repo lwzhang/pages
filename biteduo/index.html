@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--[if lt IE 7]>
+    <script src="js/IE7.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="js/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/IE9.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <title>比特多</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/website.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/banner.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="inner clearfix">
+            <h1 class="logo"><a href=""><img src="imgs/logo.png" alt="logo" /></a></h1>
+            <nav class="main-nav-bar clearfix">
+                <ul class="main-nav">
+                    <li class="is-active"><a href="">首页</a></li>
+                    <li><a href="">交易中心</a></li>
+                    <li><a href="">资金管理</a></li>
+                    <li><a href="">利息中心</a></li>
+                    <li><a href="">理财管理</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="wrapper">
+        <!--<div class="banner" id="slide">-->
+            <!--<ul id="picList">-->
+                <!--<li class="slide_li first">-->
+                    <!--<div class="imgBg_home"></div>-->
+                    <!--<img class="slide_img" src="./imgs/banner1.png" />-->
+                <!--</li>-->
+                <!--<li class="slide_li">-->
+                    <!--<div class="imgBg_air"></div>-->
+                    <!--<img class="slide_img airTop" src="./imgs/banner1.png" />-->
+                <!--</li>-->
+                <!--<li class="slide_li">-->
+                    <!--<div class="imgBg_work"></div>-->
+                    <!--<img class="slide_img" src="./imgs/banner1.png" />-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<div id="slideThumb" ></div>-->
+        <!--</div>-->
+
+        <div id="focus">
+            <ul>
+                <li><a href=""><div class="bg"><img src="./imgs/banner1.png" alt="" /></div></a></li>
+                <li><a href=""><div class="bg"><img src="./imgs/banner1.png" alt="" /></div></a></li>
+                <li><a href=""><div class="bg"><img src="./imgs/banner1.png" alt="" /></div></a></li>
+                <li><a href=""><div class="bg"><img src="./imgs/banner1.png" alt="" /></div></a></li>
+                <li><a href=""><div class="bg"><img src="./imgs/banner1.png" alt="" /></div></a></li>
+            </ul>
+
+            <span class="left-btn"></span>
+            <span class="right-btn"></span>
+        </div>
+
+
+        <div class="login">
+            <div class="mail"><input type="text" placeholder="请输入邮箱地址"/></div>
+            <div class="password"><input type="password" placeholder="请输入账户密码"/></div>
+            <span class="login-btn">登录</span>
+
+            <div class="help">
+                <a class="find-psd" href="">忘记密码</a>
+                <a class="register" href="">注册账号</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="recent-news">
+        <div class="inner clearfix">
+            <span class="news" >最新动态：<a href="">美联储银行副总裁：比特币网络</a></span>
+            <div class="QQLogin">
+                <span class="login-btn">登录</span>
+                <span class="register-btn">注册</span>
+                <span class="QQLogin-btn">QQ登录</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="service-btn"></div>
+        <div class="service-box">
+            <h2 class="title">在线客服</h2>
+            <div class="service-personnel">
+                <div>客服（阿星）<a href=""><img src="./imgs/online-icon.png" alt=""/></a></div>
+                <div>客服（阿杜）<a href=""><img src="./imgs/online-icon.png" alt=""/></a></div>
+            </div>
+            <h2 class="phone">400-366-959</h2>
+        </div>
+    </div>
+
+    <div class="coin-type">
+        <div class="inner">
+            <div class="btn-switch">
+                <span class="CNY current">CNY定价</span>
+                <span class="BTC">BTC定价</span>
+            </div>
+        </div>
+        <div class="price-today">
+            <ul class="inner clearfix">
+                <li>币种</li>
+                <li class="price"  data-sort="0" data-sortFlag="0">
+                    最新成交价
+                    <i class="cagret cagret-down"></i>
+                    <i class="cagret cagret-up"></i>
+                </li>
+                <li class="num"  data-sort="0" data-sortFlag="0">
+                    成交量
+                    <i class="cagret cagret-down"></i>
+                    <i class="cagret cagret-up"></i>
+                </li>
+                <li class="money"  data-sort="0" data-sortFlag="0">
+                    成交额
+                    <i class="cagret cagret-down"></i>
+                    <i class="cagret cagret-up"></i>
+                </li>
+                <li class="ups-and-downs" data-sort="0" data-sortFlag="0">
+                    日涨跌
+                    <i class="cagret cagret-down"></i>
+                    <i class="cagret cagret-up"></i>
+                </li>
+                <li class="interest" data-sort="0" data-sortFlag="0">
+                    利息
+                    <i class="cagret cagret-down"></i>
+                    <i class="cagret cagret-up"></i>
+                </li>
+                <li>价格走势</li>
+            </ul>
+        </div>
+        <ul class="CNY-price-today-ul">
+            <!--<li>-->
+                <!--<dl class="inner clearfix">-->
+                    <!--<dt>-->
+                        <!--比特币-->
+                    <!--</dt>-->
+                    <!--<dd>￥100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>+2.45%</dd>-->
+                    <!--<dd>0.002%</dd>-->
+                    <!--<dd></dd>-->
+                <!--</dl>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<dl class="inner clearfix">-->
+                    <!--<dt>-->
+                        <!--比特币-->
+                    <!--</dt>-->
+                    <!--<dd>￥100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>+2.45%</dd>-->
+                    <!--<dd>0.002%</dd>-->
+                    <!--<dd></dd>-->
+                <!--</dl>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<dl class="inner clearfix">-->
+                    <!--<dt>-->
+                        <!--比特币-->
+                    <!--</dt>-->
+                    <!--<dd>￥100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>+2.45%</dd>-->
+                    <!--<dd>0.002%</dd>-->
+                    <!--<dd></dd>-->
+                <!--</dl>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<dl class="inner clearfix">-->
+                    <!--<dt>-->
+                        <!--比特币-->
+                    <!--</dt>-->
+                    <!--<dd>￥100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>+2.45%</dd>-->
+                    <!--<dd>0.002%</dd>-->
+                    <!--<dd></dd>-->
+                <!--</dl>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<dl class="inner clearfix">-->
+                    <!--<dt>-->
+                        <!--比特币-->
+                    <!--</dt>-->
+                    <!--<dd>￥100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>+2.45%</dd>-->
+                    <!--<dd>0.002%</dd>-->
+                    <!--<dd></dd>-->
+                <!--</dl>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<dl class="inner clearfix">-->
+                    <!--<dt>-->
+                        <!--比特币-->
+                    <!--</dt>-->
+                    <!--<dd>￥100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>100</dd>-->
+                    <!--<dd>+2.45%</dd>-->
+                    <!--<dd>0.002%</dd>-->
+                    <!--<dd></dd>-->
+                <!--</dl>-->
+            <!--</li>-->
+        </ul>
+
+        <ul class="BTC-price-today-ul">
+        </ul>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <div class="inner feature">
+                <div class="content">
+                    <h2 class="title"><img src="./imgs/title1.png" alt=""/></h2>
+                    <p class="text">256位SSL加密安全连接，手机短信验证、谷歌两步验证、资金密码、邮箱验证四重验证保障安全，钱包分布式离线冷存储</p>
+                </div>
+                <img class="icon" src="./imgs/feature-icon1.png" alt=""/>
+            </div>
+        </div>
+        <div class="container middle">
+            <div class="inner feature">
+                <div class="content">
+                    <h2 class="title"><img src="./imgs/title1.png" alt=""/></h2>
+                    <p class="text">256位SSL加密安全连接，手机短信验证、谷歌两步验证、资金密码、邮箱验证四重验证保障安全，钱包分布式离线冷存储</p>
+                </div>
+                <img class="icon" src="./imgs/feature-icon2.png" alt=""/>
+            </div>
+        </div>
+        <div class="container">
+            <div class="inner feature">
+                <div class="content">
+                    <h2 class="title"><img src="./imgs/title1.png" alt=""/></h2>
+                    <p class="text">256位SSL加密安全连接，手机短信验证、谷歌两步验证、资金密码、邮箱验证四重验证保障安全，钱包分布式离线冷存储</p>
+                </div>
+                <img class="icon" src="./imgs/feature-icon3.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-link">
+        <div class="inner clearfix">
+            <div class="notice">
+                <h3 class="title">
+                    站内公告
+                    <a class="more" href="">更多>></a>
+                </h3>
+                <ul class="notice-list">
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                </ul>
+            </div>
+
+            <div class="news-info">
+                <h3 class="title">
+                    新闻资讯
+                    <a class="more" href="">更多>></a>
+                </h3>
+                <ul class="news-list">
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                    <li><a href="">如果你支持言论自由，你也应该支持</a><span>2015-02-06</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <ul class="inner clearfix">
+            <li><a href="">
+                <img src="./imgs/sina-icon.png" data-hover="./imgs/sina-hover-icon.png" alt=""/>
+                <span class="text">
+                    <span>新浪微博</span><span>@厦门比特多</span>
+                </span>
+            </a></li>
+            <li><a href="">
+                <img src="./imgs/weixin-icon.png" data-hover="./imgs/weixin-hover-icon.png" alt=""/>
+                <span class="text">
+                    <span>官方微信</span><span>厦门比特多</span>
+                </span>
+            </a></li>
+            <li><a href="">
+                <img src="./imgs/QQ-icon.png" data-hover="./imgs/QQ-hover-icon.png" alt=""/>
+                <span class="text">
+                    <span>客服QQ</span><span>56474745747</span>
+                </span>
+            </a></li>
+            <li><a href="">
+                <img src="./imgs/mail-icon.png" data-hover="./imgs/mail-hover-icon.png" alt=""/>
+                <span class="text">
+                    <span>电子邮箱</span><span>service@biteduo.com</span>
+                </span>
+            </a></li>
+            <li><a href="">
+                <img src="./imgs/group-icon.png" data-hover="./imgs/group-hover-icon.png" alt=""/>
+                <span class="text">
+                    <span>QQ交流群</span><span>46464654645</span>
+                </span>
+            </a></li>
+            <li><a href="">
+                <img src="./imgs/phone-icon.png" data-hover="./imgs/phone-hover-icon.png" alt=""/>
+                <span class="text">
+                    <span>联系电话</span><span>46464646457</span>
+                </span>
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="friendly-link">
+            <dl class="inner clearfix">
+                <dt>友情链接：</dt>
+                <dd><a href="">巴比特</a></dd>
+                <dd><a href="">BTC123</a></dd>
+                <dd><a href="">菠萝集市</a></dd>
+                <dd><a href="">比巴克</a></dd>
+                <dd><a href="">一比特</a></dd>
+                <dd><a href="">比特帮</a></dd>
+                <dd><a href="">币民</a></dd>
+                <dd><a href="">币看</a></dd>
+                <dd><a href="">比特币</a></dd>
+                <dd><a href="">比特币家园</a></dd>
+                <dd><a href="">范比特</a></dd>
+                <dd><a href="">比特币资讯网</a></dd>
+            </dl>
+        </div>
+        <div class="copyright-box">
+            <ul class="copyright-ul inner clearfix">
+                <li><a href="">准备金</a></li>
+                <li><a href="">媒体专访</a></li>
+                <li><a href="">加入我们</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">合作商家</a></li>
+                <li><a href="">更新日志</a></li>
+                <li><a href="">意见反馈</a></li>
+                <li><a href="">帮助说明</a></li>
+            </ul>
+
+            <p class="copyright">CopyRight &copy; 比特多版权 | 闽ICP备14021919号</p>
+            <p class="address">厦门比特多网络技术有限公司(地址：厦门观日路28号204)</p>
+        </div>
+    </div>
+
+    <div class="rocket"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

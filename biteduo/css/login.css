@@ -1,0 +1,75 @@
+.login {
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    margin-left: -350px;
+    z-index: 9999;
+}
+
+.login .mail, .login .password {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    border: 1px solid #b4b4b4;
+}
+
+.login .mail:before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../imgs/mail.png") no-repeat;
+}
+
+.login .password:before {
+    content: "";
+    width: 24px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../imgs/psd-icon.png") no-repeat;
+}
+
+.login .mail input, .login .password input {
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.login .login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1345ff;
+    /*font-weight: bold;*/
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login .help {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-top: -6px;
+    /*font-weight: bold;*/
+}
+
+.login .help a {
+    display: block;
+    color: #ffffff;
+    margin: 5px 10px;
+}
+
+.login .help a:hover {
+    text-decoration: underline;
+}
+

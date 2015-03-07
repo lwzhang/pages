@@ -1,0 +1,629 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "微软雅黑";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a, input{
+    text-decoration: none;
+    outline: none;
+}
+
+.header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #13aeff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    /*background: url("../imgs/header.png") repeat-x;*/
+    /*box-shadow: 0 10px 10px #1094d9;*/
+}
+
+.header .shadow {
+    width: 100%;
+    height: 10px;
+    background: url("../imgs/shadow.png") repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: none;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+}
+
+.main-nav-bar {
+    float: right;
+    margin-top: 8px;
+}
+
+.main-nav li {
+    float: left;
+    border-radius: 3px;
+    margin-right: 1px;
+}
+
+.main-nav li a {
+    display: block;
+    color: #ffffff;
+    padding: 6px 15px;
+    font-size: 16px;
+    /*font-weight: bold;*/
+}
+
+.main-nav li:hover {
+     background-color: #1382ff;
+}
+
+.main-nav li.is-active {
+     background-color: #1382ff;
+}
+
+.recent-news {
+    background-color: #eeeeee;
+    padding: 10px 0;
+    font-size: 16px;
+    /*font-weight: bold;*/
+    color: #555555;
+}
+
+.recent-news .news {
+    /*display: inline-block;*/
+    float: left;
+    color: #333333;
+}
+
+.recent-news .news a {
+    color: #555555;
+}
+
+.recent-news .news:before {
+    content: "";
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../imgs/news-icon.png") no-repeat;
+    margin-right: 8px;
+}
+
+.recent-news .news a:hover {
+    color: #13aeff;
+    /*text-decoration: underline;*/
+}
+
+.recent-news .QQLogin {
+    float: right;
+    color: #333333;
+}
+
+.QQLogin span {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.QQLogin span:nth-child(n):after {
+    /*border-right: 1px solid grey;*/
+    /*padding-right: 6px;*/
+    content: "";
+    width: 1px;
+    height:13px;
+    display: block;
+    background-color: #bebebe;
+    position: absolute;
+    right: -7px;
+    top: 6px;
+}
+
+.QQLogin span:last-child:after {
+    display: none;
+}
+
+.left-btn, .right-btn {
+    position: absolute;
+    top: 155px;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+.left-btn {
+    left: 200px;
+    background: url("../imgs/arrow-left.png") no-repeat 17px 10px;
+}
+
+.right-btn {
+    right: 200px;
+    background: url("../imgs/arrow-right.png") no-repeat 20px 10px;
+}
+
+.service {
+    position: fixed;
+    top: 250px;
+    right: -213px;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.service .service-btn {
+    float: left;
+    width: 49px;
+    height: 125px;
+    background: url("../imgs/servicepng.png") no-repeat;
+}
+
+.service-box {
+    float: left;
+    border: 3px solid #1874ff;
+    color: #1874ff;
+    /*display: none;*/
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.service-box .title {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #cfcfcf;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.service-personnel {
+    padding: 10px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.service-personnel div {
+    padding: 5px 0;
+    color: #444444;
+    font-size: 14px;
+}
+.service-personnel a {
+    color: #1874ff;
+    /*display: inline-block;*/
+    /*border: 1px solid #1874ff;*/
+    padding: 5px 8px;
+    /*border-radius: 5px;*/
+    margin-left: 10px;
+}
+
+.service-personnel a img {
+    vertical-align: middle;
+}
+
+.phone {
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.phone:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../imgs/phone.png") no-repeat;
+    margin-right: 8px;
+    margin-top: -10px;
+}
+
+.btn-switch {
+    padding: 10px 0;
+}
+
+.btn-switch span {
+    display: inline-block;
+    border: 1px solid #cecece;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    cursor: pointer;
+    color: #555555;
+}
+
+.btn-switch .current {
+    color: #ffffff;
+    background-color: #13aeff;
+    border: 1px solid #13aeff;
+}
+
+.price-today {
+    background-color: #444444;
+}
+
+/*.price-today li:hover {*/
+    /*color: #ff7950;*/
+/*}*/
+
+.price-today li {
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 39px;
+    /*text-align: center;*/
+    width: 140px;
+    /*font-weight: bold;*/
+    position: relative;
+    cursor: pointer;
+}
+
+.price-today .cagret {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #ffffff;
+    bottom: 12px;
+    cursor: pointer;
+    display: inline-block;
+    height: 0;
+    margin-left: 10px;
+    position: absolute;
+    vertical-align: middle;
+    width: 0;
+}
+
+.price-today .cagret-up {
+    border-color: transparent transparent #ffffff;
+    border-style: solid;
+    border-width: 6px;
+    bottom: 20px;
+}
+
+.CNY-price-today-ul li, .BTC-price-today-ul li {
+    height: 60px;
+    width: 100%;
+}
+
+.CNY-price-today-ul li:nth-child(odd), .BTC-price-today-ul li:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.CNY-price-today-ul li:nth-child(even), .BTC-price-today-ul li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.CNY-price-today-ul li:hover, .BTC-price-today-ul li:hover {
+    background-color: #d3ebff;
+}
+
+.CNY-price-today-ul dt, .CNY-price-today-ul dd, .BTC-price-today-ul dt, .BTC-price-today-ul dd {
+    color: #474747;
+    float: left;
+    font-size: 14px;
+    line-height: 60px;
+    overflow: hidden;
+    /*text-align: center;*/
+    width: 140px;
+}
+
+.CNY-price-today-ul dt img, .BTC-price-today-ul dt img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.CNY-price-today-ul dd img, .BTC-price-today-ul dd img {
+    vertical-align: middle;
+    width: 100px;
+    height: 50px;
+}
+
+.BTC-price-today-ul {
+    display: none;
+}
+
+.container {
+    background-color: #ffffff;
+    height: 327px;
+}
+
+.feature {
+    padding: 100px 0;
+    position: relative;
+}
+
+.feature .content {
+    width: 600px;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+}
+
+.feature .icon {
+    position: absolute;
+    top: 100px;
+    transform: translate3d(0, 0, 150px);
+    -ms-transform: translate3d(0, 150px, 0);
+    -webkit-transform: translate3d(0, 150px, 0);
+    -o-transform: translate3d(0, 150px, 0);
+    -moz-transform: translate3d(0, 150px, 0);
+    opacity: 0;
+    transition: transform 1s ease 0s, opacity 1s ease 0s;
+    -moz-transition: -moz-transform 1s ease 0s, opacity 1s ease 0s;
+    -webkit-transition: -webkit-transform 1s ease 0s, opacity 1s ease 0s;
+    -o-transition: -o-transform 1s ease 0s, opacity 1s ease 0s;
+    -ms-transition: -ms-transform 1s ease 0s, opacity 1s ease 0s;
+}
+
+.feature .content .title {
+    font-size: 40px;
+    margin-bottom: 28px;
+}
+
+.feature .content .text {
+    font-size: 16px;
+    line-height: 30px;
+    /*font-weight: bold;*/
+    color: #333333;
+}
+
+.middle {
+    background-color: #f6f6f6;
+}
+
+.middle .content {
+    width: 600px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+.middle .icon {
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.news-link {
+    background-color: #f6f6f6;
+    padding: 33px 0;
+}
+
+.news-link .notice, .news-link .news-info {
+    float: left;
+    width: 42%;
+    font-size: 16px;
+    color: #555555;
+}
+
+.news-link .notice {
+    margin-right: 15%;
+}
+
+.news-link .title {
+    padding: 10px 0;
+    border-bottom: 1px solid #3ea2ff;
+    color: #0076e4;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.news-link .notice .title:before {
+    content: "";
+    width: 32px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../imgs/notice-icon.png") no-repeat;
+    margin-right: 8px;
+    margin-top: -9px;
+}
+
+.news-link .news-info .title:before {
+    content: "";
+    width: 26px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../imgs/newsInfo-icon.png") no-repeat;
+    margin-right: 8px;
+    margin-top: -4px;
+}
+
+.news-link .title a {
+    color: #555555;
+    font-size: 14px;
+    float: right;
+    display: block;
+    margin-top: 5px;
+}
+
+.news-link .notice-list, .news-link .news-list {
+    padding: 10px 0;
+}
+
+.news-link li {
+    border-bottom: 1px dashed #c0c0c0;
+    padding: 10px 0;
+    /*list-style-type: square;*/
+    /*margin-left: 15px;*/
+}
+
+.news-link li a:before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background-color: #666666;
+    vertical-align: middle;
+}
+
+.news-link li a {
+    color: #555555;
+    font-size: 16px;
+    /*font-weight: bold;*/
+}
+
+.news-link li a:hover {
+    color: #3ea2ff;
+}
+
+.news-link li a:hover:before {
+    background-color: #3ea2ff;
+}
+
+.news-link li span {
+    float: right;
+    color: #888888;
+}
+
+.contact {
+    padding: 20px 0 ;
+}
+
+.contact li {
+    float: left;
+    width: 29%;
+    box-sizing: border-box;
+    padding: 30px 0 30px 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    margin: 10px 6% 10px 0;
+    font-size: 16px;
+}
+
+.contact li a {
+    color: #444444;
+}
+
+.contact li:nth-child(3), .contact li:nth-child(6) {
+    margin-right: 0;
+}
+
+.contact li:hover {
+    color: #3ea2ff;
+    border: 1px solid #3ea2ff;
+}
+
+.contact li:hover>a {
+    color: #3ea2ff;
+}
+
+.contact img, .contact .text {
+    float: left;
+}
+
+.contact .text {
+    /*font-size: 14px;*/
+    margin-top: -11px;
+}
+
+.contact .text span {
+    display: block;
+    margin-left: 35px;
+    line-height: 30px;
+}
+
+.footer {
+    background-color: #4a4a4a;
+    padding: 30px 0;
+    color: #d1d1d1;
+    font-size: 14px;
+    /*font-weight: bold;*/
+}
+
+.friendly-link dl {
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.friendly-link dt {
+    color: #eeeeee;
+}
+
+.friendly-link dt, .friendly-link dd {
+    float: left;
+    /*font-size: 14px;*/
+    /*font-weight: bold;*/
+    /*color: #d1d1d1;*/
+
+}
+
+.friendly-link dd {
+    margin-right: 25px;
+}
+
+.footer a {
+    color: #d1d1d1;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright-ul {
+    /*text-align: center;*/
+    padding-left: 214px;
+    box-sizing: border-box;
+}
+
+.copyright-ul li {
+    float: left;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+.copyright, .address {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    margin-bottom: 20px;
+}
+
+.rocket {
+    width: 55px;
+    height: 90px;
+    background: url("../imgs/rocket.png") no-repeat;
+    position: fixed;
+    right: 55px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+}
+
